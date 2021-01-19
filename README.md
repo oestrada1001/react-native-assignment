@@ -1,3 +1,7 @@
+# Important Notice
+
+Please fork this repo and work off of the fork.
+
 # ReactNativeDigilockAssignment
 
 This is a React-Native project testing candidate's ability to create a cross-platform mobile application using React Native with its native cli and implement the following:
@@ -63,11 +67,13 @@ npm install
 ```
 
 2. To install cocoapods
+
 ```
 sudo gem install cocoapods
 ```
 
 3. Navigate to the ios folder, run
+
 ```
 pod install
 ```
