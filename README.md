@@ -1,6 +1,6 @@
 # Important Notice
 
-Please fork this repo and work off of the fork.
+Please fork this repo, set it to private, and work off of the fork.
 
 # ReactNativeDigilockAssignment
 
