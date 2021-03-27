@@ -8,14 +8,13 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import { StatusBar } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
-//import { enableScreens } from 'react-native-screens';
+import { enableScreens } from 'react-native-screens';
 
-//enableScreens();
+enableScreens();
 
-import NavigationStack from './Navigation';
- 
+import {NavigationStack} from './Navigation';
 
 const App = () => {
   return (
