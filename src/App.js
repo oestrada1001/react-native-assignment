@@ -9,15 +9,13 @@ import 'react-native-gesture-handler';
 import React from 'react';
 import { StatusBar } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
+//import { enableScreens } from 'react-native-screens';
 
-import HomeScreen from './containers/Home';
-import ClientsScreen from './containers/Clients';
-import AnimationScreen from './containers/Animation';
-import NewClientScreen from './containers/NewClient';
+//enableScreens();
 
-const Stack = createStackNavigator();
+import NavigationStack from './Navigation';
+ 
 
 const App = () => {
   return (
@@ -25,12 +23,7 @@ const App = () => {
       <StatusBar barStyle="dark-content" />
       <SafeAreaProvider>
         <NavigationContainer>
-            <Stack.Navigator>
-                <Stack.Screen name="Home" component={HomeScreen} />
-                <Stack.Screen name="Clients" component={ClientsScreen} />
-                <Stack.Screen name="Animation" component={AnimationScreen} />
-                <Stack.Screen name="New Client" component={NewClientScreen} />
-            </Stack.Navigator>
+            <NavigationStack />
         </NavigationContainer>
       </SafeAreaProvider>
     </>
