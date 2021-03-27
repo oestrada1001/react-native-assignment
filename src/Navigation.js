@@ -9,6 +9,10 @@ import { useNavigation } from '@react-navigation/core';
 
 const Stack = createStackNavigator();
 
+/**
+ * All routes across application will derive from here.
+ * Dynamic navigation elements are created based off of this list.
+ */
 const Routes = [
      {
          name: 'Home',
@@ -16,19 +20,19 @@ const Routes = [
          component: HomeScreen
      },
      {
-         name: 'Clients',
-         title: 'Client List',
-         component: ClientsScreen
-     },
-     {
          name: 'Animation',
          title: 'Animated Box',
          component: AnimationScreen
      },
      {
-         name: 'New Client',
+         name: 'Add Client',
          title: 'Add Client',
          component: NewClientScreen
+     },
+     {
+         name: 'Clients',
+         title: 'Client List',
+         component: ClientsScreen
      }
 ];
 
